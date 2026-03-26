@@ -11,17 +11,11 @@ import java.time.Instant;
 @Setter
 @Entity
 @Table(name = "contacts")
-public class Contact {
+public class Contact extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
-
-    @Column(name = "created_at", nullable = false)
-    private Instant createdAt;
-
-    @Column(name = "created_by", nullable = false, length = 20)
-    private String createdBy;
 
     @Column(name = "email", nullable = false)
     private String email;

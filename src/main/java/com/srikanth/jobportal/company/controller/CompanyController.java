@@ -24,6 +24,7 @@ public class CompanyController {
 
     @GetMapping(version = "1.0")
     public ResponseEntity<List<CompanyDto>> getAllCompanies() {
+        //throw new RuntimeException("Not implemented");
         List<CompanyDto> companies = companyService.getAllCompanies();
         return ResponseEntity.ok(companies);
     }
