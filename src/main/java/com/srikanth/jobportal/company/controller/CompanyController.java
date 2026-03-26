@@ -2,9 +2,7 @@ package com.srikanth.jobportal.company.controller;
 
 
 import com.srikanth.jobportal.dto.CompanyDto;
-import com.srikanth.jobportal.entity.Company;
-import com.srikanth.jobportal.repository.CompanyReposiory;
-import com.srikanth.jobportal.service.ICompanyService;
+import com.srikanth.jobportal.company.service.ICompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +15,7 @@ import java.util.List;
 @RequestMapping("/companies")
 public class CompanyController {
 
-    private ICompanyService companyService;
+    private final ICompanyService companyService;
 
     @Autowired
     public CompanyController(ICompanyService companyService) {

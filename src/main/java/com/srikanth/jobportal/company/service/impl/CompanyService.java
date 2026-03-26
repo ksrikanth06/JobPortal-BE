@@ -1,13 +1,12 @@
-package com.srikanth.jobportal.service.impl;
+package com.srikanth.jobportal.company.service.impl;
 
 import com.srikanth.jobportal.dto.CompanyDto;
 import com.srikanth.jobportal.entity.Company;
 import com.srikanth.jobportal.repository.CompanyReposiory;
-import com.srikanth.jobportal.service.ICompanyService;
+import com.srikanth.jobportal.company.service.ICompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

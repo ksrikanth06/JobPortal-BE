@@ -1,4 +1,4 @@
-package com.srikanth.jobportal.service;
+package com.srikanth.jobportal.company.service;
 
 import com.srikanth.jobportal.dto.CompanyDto;
 
