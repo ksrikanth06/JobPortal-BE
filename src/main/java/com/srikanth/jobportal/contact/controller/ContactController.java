@@ -26,7 +26,7 @@ public class ContactController {
     }
 
 
-    @PostMapping(version = "1.0")
+    @PostMapping( path = "/public" , version = "1.0")
     public ResponseEntity<String> saveContactMessage(@RequestBody @Valid ContactRequestDto contactRequestDto){
 
       boolean isSaved =   contactService.saveContact(contactRequestDto);

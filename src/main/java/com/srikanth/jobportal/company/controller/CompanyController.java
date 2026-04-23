@@ -22,7 +22,7 @@ public class CompanyController {
         this.companyService = companyService;
     }
 
-    @GetMapping(version = "1.0")
+    @GetMapping( path = "/public", version = "1.0")
     public ResponseEntity<List<CompanyDto>> getAllCompanies() {
         //throw new RuntimeException("Not implemented");
         List<CompanyDto> companies = companyService.getAllCompanies();
